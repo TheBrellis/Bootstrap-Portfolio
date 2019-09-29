@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../images/concrete_seamless.png');
+}
+
+
+p {
+    line-height: 2;
+}
+
+footer{
+    clear: both;
+    position: relative;
+    z-index: 2;
+    top: 100px;
+}
+
