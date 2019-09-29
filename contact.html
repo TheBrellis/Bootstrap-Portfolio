@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>BrianREllis-Contact</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel='stylesheet' href='assets/css/style.css'>
 </head>
-
 <body>
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,43 +16,58 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">About Me</a>
+        <a class="nav-item nav-link" href="index.html">About Me</a>
         <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-item nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
       </div>
     </div>
   </nav>
+
+
   <!--CONTENT-->
   <div class='container'>
     <div class='row mt-4'>
       <!--Page Header-->
-      <div class="card-fluid">
+      <div class="col-md-12">
+        <div class='card bg-light border-dark-rounded'>
         <h4 class="card-header bg-dark text-white">Contact</h4>
-        <div class="container">
-          <div class='row mt-4 mb-4'>
-            <div class='col-md-12 col-sm-8 col-sm-4'>
-              <form>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Name</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe...">
+        <!--Contact Form-->
+        <div class='row my-4'>
+          <div class='col-md-12'>
+            <form class= 'px-4'>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe...">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <div class="form-group">
+                <div class="my-4">
+                  <button type="submit" class="btn btn-dark">Submit</button>
                 </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="example@gmail.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
-            </div>
-            <!--FOOTER  footer styling classes courtousy of https://mdbootstrap.com/docs/jquery/navigation/footer/-->
-            <footer class="page-footer font-small footer-dark text-dark">
-              <!--defining footer / setting font size / setting -->
-              <!-- Copyright -->
-              <p class="text-center bg-dark text-white p-2 mt-5">©Copyright</p>
-            </footer>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--FOOTER  footer styling classes courtousy of https://mdbootstrap.com/docs/jquery/navigation/footer/-->
+  <footer class="page-footer font-small footer-dark text-dark">
+    <!--defining footer / setting font size / setting font and text color -->
+    <!-- Copyright -->
+    <p class="text-center bg-dark text-white p-2 mt-5">©Copyright</p>
+  </footer>
 </body>
 
 </html>
