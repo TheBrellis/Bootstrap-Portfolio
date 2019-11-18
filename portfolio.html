@@ -12,7 +12,7 @@
 
 <body>
 
-<!--NAVBAR-->
+  <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ml-md-5 ml-sm-2">
     <a class="navbar-brand" href="#">Brian R Ellis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -29,61 +29,43 @@
   </nav>
 
 
-<!--CONTENT-->
-  <div class='container bg-light border-dark rounded ml-md-5 ml-sm-2 '>
-    <div class='row mt-4'>
-      <!--Page Header-->
-      <div class="col-md-12 px-0">
-        <h4 class="card-header bg-dark text-white px-4">Portfolio</h4>
-        <!--Images with Titles Overlayed-->
-        <div class='row my-4'>
-          <!--Hangman-->
-          <div class='col-md-6'>
-            <div class="card mx-4 border-dark rounded">
-              <img class="card-img" src='assets/images/hangman.jpg' alt="random image">
-              <div class="card-img-overlay px-0 my-md-2 my-sm-1">
-                <h2 class="card-text bg-dark text-light text-center py-2">Hangman</h2>
+  <!--CONTENT-->
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body bg-dark">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner bg-dark my-2">
+                <!--Deet Dash-->
+                <div class="carousel-item active">
+                  <a href="https://thebrellis.github.io/Project-1/" target="_blank">
+                    <img src="assets/images/deetDash.PNG" class="d-block w-100" alt="project 1 image - Deet Dash">
+                  </a>
+                </div>
+                <!--Day Planner-->
+                <div class="carousel-item">
+                  <a href="https://thebrellis.github.io/Day-Planner/" target="_blank">
+                    <img src="assets/images/workScheduler.PNG" class="d-block w-100"
+                      alt="homework 1 image - Day Planner">
+                  </a>
+                </div>
+                <!--Password Generator-->
+                <div class="carousel-item">
+                  <a href="https://thebrellis.github.io/Password-Generator/" traget="_blank">
+                    <img src="assets/images/passwordGenerator.PNG" class="d-block w-100"
+                      alt="homework 2 image - Password Generator">
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
-          <!--RPG-->
-          <div class='col-md-6'>
-            <div class="card mx-4 border-dark rounded mt-md-0 mt-sm-4">
-              <img class="card-img" src='assets/images/rpgGame.jpg' alt="random image">
-              <div class="card-img-overlay px-0 my-4">
-                <h2 class="card-text bg-dark text-light text-center py-2">RPG Game</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='row my-4'>
-          <!--Trivia Game-->
-          <div class='col-md-6'>
-            <div class="card mx-4 border-dark rounded">
-              <img class="card-img" src='assets/images/triviaGame.jpg' alt="random image">
-              <div class="card-img-overlay px-0 my-4">
-                <h2 class="card-text bg-dark text-light text-center py-2 ">Trivia Game</h2>
-              </div>
-            </div>
-          </div>
-          <!--Rutgers Info Widget-->
-          <div class='col-md-6'>
-            <div class="card mx-4 border-dark rounded mt-md-0 mt-sm-4">
-              <img class="card-img" src='assets/images/rutgersInfoWidget.jpg' alt="random image">
-              <div class="card-img-overlay px-0 my-4">
-                <h2 class="card-text bg-dark text-light text-center py-2">Rutgers Info Widget</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='row my-4'>
-          <!--Rock Paper Scissors-->
-          <div class='col-md-6'>
-            <div class="card mx-4 border-dark rounded mt-md-0 mt-sm-2">
-              <img class="card-img" src='assets/images/rockPaperScissors.jpg' alt="random image">
-              <div class="card-img-overlay px-0 my-4">
-                <h2 class="card-text bg-dark text-light text-center py-2 ">Rock Paper Scissors</h2>
-              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
@@ -92,12 +74,21 @@
   </div>
 
 
-<!--FOOTER  footer styling classes courtousy of https://mdbootstrap.com/docs/jquery/navigation/footer/-->
+  <!--FOOTER  footer styling classes courtousy of https://mdbootstrap.com/docs/jquery/navigation/footer/-->
   <footer class="page-footer font-small footer-dark text-dark">
     <!--defining footer / setting font size / setting -->
     <!-- Copyright -->
     <p class="text-center bg-dark text-white p-2 mt-5">©Copyright</p>
   </footer>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
